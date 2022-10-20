@@ -1,5 +1,4 @@
-const baseUrl = "/auth";
-const baseUrlData = "/users";
+const baseUrl = "http://94.74.86.174:8080/api/login";
 
 const login = async (form) => {
   const dataUser = await fetch(baseUrl, {

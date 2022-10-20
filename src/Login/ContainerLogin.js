@@ -37,8 +37,8 @@ class ContainerLogin extends Component {
           passwordError: "Invalid password !",
         });
       } else if (
-        this.state.username !== "faqih.mubarak" &&
-        this.state.password !== "123456"
+        this.state.username !== "user" &&
+        this.state.password !== "user"
       ) {
         swal("Login Invalid", "You clicked the button!", "error");
       } else {

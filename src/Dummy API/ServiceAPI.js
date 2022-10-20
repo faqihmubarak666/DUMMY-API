@@ -1,7 +1,7 @@
-const baseUrl = "https://dummyapi.io/data/api/user";
-const baseUrl2 = "https://dummyapi.io/data/api/tag";
-const baseUrl3 = "https://dummyapi.io/data/api/post";
-const token = "icMBBaVT4Rr8kBVX2S3u";
+const baseUrl = "https://dummyapi.io/data/v1/user";
+const baseUrl2 = "https://dummyapi.io/data/v1/tag";
+const baseUrl3 = "https://dummyapi.io/data/v1/post";
+const token = "62e1d90e2677f9d8258fd877";
 
 const getAllUsers = async () => {
   const users = await fetch(baseUrl, {

@@ -83,7 +83,6 @@ class ContainerUser extends Component {
         <DetailUser
           user={this.props.user}
           show={this.state.showModalUserId}
-          userById={this.userById}
           onHide={this.handleCloseDetail}
         />
       </div>

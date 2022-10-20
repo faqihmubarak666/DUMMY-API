@@ -2,14 +2,12 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../Page.css";
 import Card from "react-bootstrap/Card";
-import loading from "../../image/animation_300_kdabp29z.gif";
 
 const TableComment = (props) => {
-  const { allPost, userByComment, isLoaded } = props;
+  const { allPost, userByComment } = props;
 
   return (
     <div>
-      {/* {isLoaded ? ( */}
       <row>
         {allPost.map((post) => (
           <Card

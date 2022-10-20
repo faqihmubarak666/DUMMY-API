@@ -6,14 +6,8 @@ import { Form, FormControl, Button } from "react-bootstrap";
 import loading from "../../image/animation_300_kdabp29z.gif";
 
 const Tabledata = (props) => {
-  const {
-    allUser,
-    userByPost,
-    userById,
-    handleChangeInput,
-    search,
-    isLoaded,
-  } = props;
+  const { allUser, userByPost, userById, handleChangeInput, search, isLoaded } =
+    props;
   return (
     <div>
       {isLoaded ? (
@@ -43,8 +37,15 @@ const Tabledata = (props) => {
                   src={data.picture}
                   style={{ height: "220px" }}
                 />
-                <button onClick={() => userById(data.id)}>{data.id}</button>
-                {/* <Card.Text>{data.id}</Card.Text> */}
+                <button
+                  className="btn btn-link"
+                  onClick={() => userById(data.id)}
+                >
+                  {data.id}
+                </button>
+                {/* <a className="btn btn-link" onClick={() => userById(data.id)}>
+                  {data.id}
+                </a> */}
                 <Card.Title style={{ fontWeight: "bold" }}>
                   {data.title}. {data.firstName} {data.lastName}
                 </Card.Title>

@@ -27,6 +27,7 @@ const DetailUser = (props) => {
           <Card style={{ width: "29rem" }}>
             <img
               src={user.picture}
+              alt="profile"
               style={{
                 width: "230px",
                 height: "230px",

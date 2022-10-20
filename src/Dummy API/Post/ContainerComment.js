@@ -32,15 +32,12 @@ class ContainerComment extends Component {
   userByComment = (id) => {
     getUserByComment(id).then((response) => {
       const result = response.data;
-      console.log("hasilnya", result);
       this.props.GetUserComment(result);
-      {
-        result.length === 0
-          ? swal("No Comment")
-          : this.setState({
-              showComment: !this.state.showComment,
-            });
-      }
+      result.length === 0
+        ? swal("No Comment")
+        : this.setState({
+            showComment: !this.state.showComment,
+          });
     });
   };
 
